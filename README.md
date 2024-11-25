@@ -1,10 +1,16 @@
 # Process completion notification bot (Slack)
 
+## Overview
+
+- Python スクリプトの実行完了を Slack に通知する Bot
+
+## Setup
+
 ```bash
-git clone
+git clone https://github.com/rice8y/sapi.git
 ```
 
-## Create New App
+### Create New App
 
 1. [Slack](https://slack.com/intl/ja-jp/signin#/signin) にログインし, Workspace を作成する.
 
@@ -16,7 +22,7 @@ git clone
 
 5. `Create` を選択する.
 
-## Configuration settings
+### Configuration settings
 
 1. `api.py` を任意のディレクトリに配置する.
 
@@ -33,7 +39,7 @@ git clone
 pip install -r requirements.txt
 ```
 
-## Create a symbolic link
+### Create a symbolic link
 
 1. `~/.local/bin` を作成する.
 
