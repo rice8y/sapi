@@ -82,7 +82,9 @@ ln -s /path/to/api.py ~/.local/bin/symlink_name
 symlink_name tune.py
 ```
 
-![sample](sample.png)
+<div style="text-align: center;">
+    <img src="sample.png" width=70%/>
+</div>
 
 ## Constraints
 
