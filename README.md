@@ -83,7 +83,7 @@ symlink_name tune.py
 ```
 
 <div style="text-align: center;">
-    <img src="sample.png" width=70%/>
+    <img src="sample.png" style="display: block; margin: auto;" width="70%"/>
 </div>
 
 ## Constraints
