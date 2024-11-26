@@ -56,18 +56,18 @@ def send_slack_notification(command, elapsed_time, status):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 api.py <script_to_run.py> [script_args...]")
+        print("Usage: api.py <script_to_run> [script_args...]")
         sys.exit(1)
 
     script_to_run = sys.argv[1]
     script_args = sys.argv[2:]
-    command = f"python3 {script_to_run} {' '.join(script_args)}"
+    command = f"{script_to_run} {' '.join(script_args)}"
 
     start_time = time.time()
 
     try:
         print(f"Running script: {command}")
-        subprocess.run(["python3", script_to_run] + script_args, check=True)
+        subprocess.run([script_to_run] + script_args, check=True)
         end_time = time.time()
         elapsed_time = end_time - start_time
         send_slack_notification(command, elapsed_time, "Success")

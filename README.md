@@ -76,23 +76,21 @@ ln -s /path/to/api.py ~/.local/bin/symlink_name
 
 ## Usage
 
-`symlink_name` を `python3` の代わりに使用する.
-
 ```bash
-symlink_name tune.py
+symlink_name python3 tune.py
 ```
 
 <div style="text-align: center;">
     <img src="sample.png" style="display: block; margin: auto;" width="70%"/>
 </div>
 
-## Constraints
+<!-- ## Constraints
 
-- `python3 hoge.py <args...>` の形式での使用のみを想定
+- `python3 hoge.py <args...>` の形式での使用のみを想定 -->
 
 ## ToDo
 
-- Python以外の言語や様々なコマンドの形式に対応させる
+<!-- - Python以外の言語や様々なコマンドの形式に対応させる -->
 - Slack側のUIを見やすいように整形する
 - エラー処理を追加する
 
