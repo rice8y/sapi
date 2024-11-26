@@ -79,8 +79,10 @@ ln -s /path/to/api.py ~/.local/bin/symlink_name
 `symlink_name` を `python3` の代わりに使用する.
 
 ```bash
-symlink_name train.py yolo11s.pt yolo11s-train-01
+symlink_name tune.py
 ```
+
+![sample](sample.png)
 
 ## Constraints
 
