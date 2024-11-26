@@ -1,4 +1,4 @@
-# Process completion notification bot (Slack)
+# Process completion notification bot (Sapi)
 
 ## Overview
 
@@ -95,3 +95,7 @@ symlink_name tune.py
 - Python以外の言語や様々なコマンドの形式に対応させる
 - Slack側のUIを見やすいように整形する
 - エラー処理を追加する
+
+## Lisence
+
+This project is licensed under the MIT License, see the [LICENSE](LICENSE) file for details
