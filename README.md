@@ -6,6 +6,12 @@
 
 ## Setup
 
+- [Clone this repository](#clone-this-repository)
+- [Create New APP](#create-new-app)
+- Setup using either [A. Setup automatically](#a-setup-automatically) or [B. Setup manually](#b-setup-manually)
+
+### Clone this repository
+
 ```bash
 git clone https://github.com/rice8y/sapi.git
 ```
@@ -22,7 +28,26 @@ git clone https://github.com/rice8y/sapi.git
 
 5. `Create` を選択する.
 
-### Configuration settings
+### A. Setup automatically
+
+>[!WARNING]
+>`.setup.sh` で行っていることは, [B. Setup manually](#b-setup-manually) と同様 (`api.py`, `.env` を `~/scripts` 配下に配置している).
+
+1. `setup.sh` に実行権限を付与する.
+
+```bash
+chmod +x setup.sh
+```
+
+2. 作成した Slack アプリのトークン (`SLACK_BOT_TOKEN`), ユーザ ID (`SLACK_USER_ID`), チャンネル (`SLACK_CHANNEL`) を指定して `setup.sh` を実行する. なお, オプション引数としてシンボリックリンクの名前を指定する `--SYMLINK_NAME` が存在し, デフォルトでは `sapi` がセットされる.
+
+```bash
+./setup.sh --SYMLINK_NAME=hoge --SLACK_BOT_TOKEN=abcd-0123456789012-0123456789012-qwertyuiopasdfghjklzxcvb --SLACK_USER_ID=U0123456789 --SLACK_CHANNEL=#random
+```
+
+### B. Setup manually
+
+#### Configuration settings
 
 1. `api.py` を任意のディレクトリに配置する.
 
@@ -39,7 +64,7 @@ git clone https://github.com/rice8y/sapi.git
 pip install -r requirements.txt
 ```
 
-### Create a symbolic link
+#### Create a symbolic link
 
 1. `~/.local/bin` を作成する.
 
@@ -77,20 +102,28 @@ ln -s /path/to/api.py ~/.local/bin/symlink_name
 ## Usage
 
 ```bash
-symlink_name python3 tune.py
+symlink_name <command>
+```
+
+## Example
+
+>[!WARNING]
+>以下では例として, `symlink_name` を `sapi` と設定している.
+
+```bash
+sapi python3 loop.py 1e8
+```
+
+```bash
+sapi julia loop.jl 1e8
 ```
 
 <div style="text-align: center;">
     <img src="sample.png" style="display: block; margin: auto;" width="70%"/>
 </div>
 
-<!-- ## Constraints
-
-- `python3 hoge.py <args...>` の形式での使用のみを想定 -->
-
 ## ToDo
 
-<!-- - Python以外の言語や様々なコマンドの形式に対応させる -->
 - Slack側のUIを見やすいように整形する
 - エラー処理を追加する
 

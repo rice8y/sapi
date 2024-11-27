@@ -28,7 +28,7 @@ def send_slack_notification(command, elapsed_time, status):
             "fields": [
                 {
                     "type": "mrkdwn",
-                    "text": "*Executed Command:*\n" + f"`{command}`"
+                    "text": "*Executed Command:*\n" + f"`{command}  `"
                 },
                 {
                     "type": "mrkdwn",
