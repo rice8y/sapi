@@ -2,7 +2,7 @@
 
 ## Overview
 
-- Python スクリプトの実行完了を Slack に通知する Bot
+- スクリプトの実行完了を Slack に通知する Bot
 
 ## Setup
 
