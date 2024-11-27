@@ -8,7 +8,7 @@
 
 - [Clone this repository](#clone-this-repository)
 - [Create New APP](#create-new-app)
-- Setup using either [A. Setup automatically](#a-setup-automatically) or [B. Setup manually](#b-setup-manually)
+- [A. Setup automatically](#a-setup-automatically) か [B. Setup manually](#b-setup-manually) のどちらかでセットアップする
 
 ### Clone this repository
 
