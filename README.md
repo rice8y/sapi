@@ -28,7 +28,10 @@ git clone https://github.com/rice8y/sapi.git
 
 5. `Create` を選択する.
 
-6. 
+6. `OAuth & Permissions` でアプリを Workspace にインストールする.
+
+>[!NOTE]
+>チャンネルに通知を送信する場合は, チャンネルにアプリを招待 (`/invite`) すること.
 
 ### A. Setup automatically
 
@@ -56,9 +59,6 @@ chmod +x setup.sh
 2. `.env` を作成する. `.env.sample` を使用する場合は, 適宜値を変更し, ファイル名を `.env` とすること.
 
 3. `api.py` の10行目 `load_dotenv("/path/to/.env")` を正しいパスに変更する. また, 必要に応じて通知の送信先を変更する.
-
->[!NOTE]
->チャンネルに通知を送信する場合は, チャンネルにアプリを招待 (`/invite`) すること.
 
 4. 依存関係をインストールする.
 
