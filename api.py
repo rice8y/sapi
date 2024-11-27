@@ -17,10 +17,10 @@ def send_slack_notification(command, elapsed_time, status):
     client = WebClient(token=SLACK_BOT_TOKEN)
     blocks = [
         {
-            "type": "section",
+            "type": "header",
             "text": {
-                "type": "mrkdwn",
-                "text": "*[Report]*"
+                "type": "plain_text",
+                "text": "Report"
             }
         },
         {

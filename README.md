@@ -28,6 +28,8 @@ git clone https://github.com/rice8y/sapi.git
 
 5. `Create` を選択する.
 
+6. 
+
 ### A. Setup automatically
 
 >[!WARNING]
